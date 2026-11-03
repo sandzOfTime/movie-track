@@ -1,0 +1,8 @@
+{
+  "movie": "REPLACE WITH EXACT MOVIE TITLE",
+  "theater_type": "IMAX",
+  "cinema": "Fusion Superplex",
+  "channel": "email",
+  "recipient": "you@example.com",
+  "dry_run": true
+}
