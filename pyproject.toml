@@ -7,7 +7,7 @@ name = "movie-track"
 version = "0.1.0"
 description = "Import cinema listing images and alert on matching showtimes"
 requires-python = ">=3.11"
-dependencies = ["fastapi>=0.115,<1", "uvicorn>=0.32,<1", "httpx>=0.28,<1", "beautifulsoup4>=4.12,<5", "openai>=1.68,<3", "pillow>=11,<13"]
+dependencies = ["fastapi>=0.115,<1", "uvicorn>=0.32,<1", "httpx>=0.28,<1", "beautifulsoup4>=4.12,<5", "openai>=1.68,<3", "pillow>=11,<13", "python-dotenv>=1,<2"]
 
 [project.optional-dependencies]
 test = ["pytest>=8,<10"]

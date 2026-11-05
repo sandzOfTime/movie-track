@@ -7,12 +7,14 @@ from .alerts import alert
 from .db import Database
 from .ingest import ingest
 from .models import AlertRequest, ImportRequest
+from dotenv import load_dotenv
 
 app = FastAPI(title="Movie Track")
 logger = logging.getLogger(__name__)
 
 
 def authorize(authorization: str = Header(default="")):
+    print(os.getenv("MOVIE_TRACK_API_TOKEN"))
     token = os.getenv("MOVIE_TRACK_API_TOKEN")
     if not token:
         raise HTTPException(503, "Set MOVIE_TRACK_API_TOKEN to enable API access")
